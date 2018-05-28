@@ -30,7 +30,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.chomp
   if selection.length < 2
-    print "Playing #{songs[selection.to_i]}"
+    print "Playing #{songs[selection.to_i - 1]}"
   end
   if songs.include? selection || songs[selection.to_i - 1] == TRUE
       if selection.length > 2
