@@ -27,10 +27,9 @@ def list(songs)
 end
 
 def play(songs)
-  got_song = FALSE
   puts "Please enter a song name or number:"
   selection = gets.chomp
-  if songs.include? selection || songs[selection] == TRUE
+  if songs.include? selection || songs[selection] == String
     songs.each{|song|
       if selection.length > 2
         puts "Playing #{selection}"
