@@ -31,7 +31,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.chomp
   if songs.include? selection || songs[selection] == TRUE
-    songs.each_with_index {|song, index|
+    songs.each{|song|
       if selection.length > 2
         puts "Playing #{selection}"
       else
