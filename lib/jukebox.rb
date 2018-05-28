@@ -32,8 +32,10 @@ def play(songs)
   selection = gets.chomp
   if songs.include? selection || songs[selection] == TRUE
     songs.each_with_index {|song, index|
-      if
-      puts "Playing #{}"
+      if selection.length > 2
+        puts "Playing #{selection}"
+      else
+        puts "Playing #{song[index]}"
     }
   else
     puts "Invalid input, please try again"
