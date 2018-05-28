@@ -29,7 +29,9 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.chomp
-  print songs[selection]
+  if selection.length < 2
+    print "Playing #{songs[selection]}"
+  end
   if songs.include? selection || songs[selection] == String
       if selection.length > 2
         puts "Playing #{selection}"
