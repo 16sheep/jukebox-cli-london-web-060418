@@ -35,7 +35,7 @@ def play(songs)
       if selection.length > 2
         puts "Playing #{selection}"
       else
-        puts "Playing #{song[index]}"
+        puts "Playing #{song[selection]}"
     }
   else
     puts "Invalid input, please try again"
