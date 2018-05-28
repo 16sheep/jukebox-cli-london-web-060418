@@ -32,11 +32,11 @@ def play(songs)
   if selection.length < 2
     print "Playing #{songs[selection.to_i]}"
   end
-  if songs.include? selection || songs[selection.to_i] == TRUE
+  if songs.include? selection || songs[selection.to_i + 1] == TRUE
       if selection.length > 2
         puts "Playing #{selection}"
       else
-        puts "Playing #{songs[selection.to_i]}"
+        puts "Playing #{songs[selection.to_i + 1]}"
       end
   else
     puts "Invalid input, please try again"
