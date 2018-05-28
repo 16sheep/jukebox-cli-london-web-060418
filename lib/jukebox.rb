@@ -32,7 +32,7 @@ def play(songs)
   if selection.length < 2
     print "Playing #{songs[selection.to_i]}"
   end
-  if songs.include? selection || songs[selection.to_i] == String
+  if songs.include? selection || songs[selection.to_i] == TRUE
       if selection.length > 2
         puts "Playing #{selection}"
       else
