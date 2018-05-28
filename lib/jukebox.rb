@@ -29,12 +29,12 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   selection = gets.chomp
+  print songs[]
   if songs.include? selection || songs[selection] == String
-    songs.each{|song|
       if selection.length > 2
         puts "Playing #{selection}"
       else
-        puts "Playing #{song[selection]}"
+        puts "Playing #{songs[selection]}"
       end
     }
   else
